@@ -1,10 +1,11 @@
+console.log("Initializing Benchmark");
 
 // import cassandra from 'cassandra-driver';
 import { Client } from 'cassandra-driver';
+// let Client = import('cassandra-driver');
 
-console.log("Initializing Benchmark");
 
-const db = new Client({
+const db =  new Client({
     // contactPoints: ['h1', 'h2'],
     // localDataCenter: 'datacenter1',
     keyspace: 'skyroom`'
